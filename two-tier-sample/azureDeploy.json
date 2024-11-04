@@ -2,32 +2,33 @@
   "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
-    "StorageAccountName": {
+    "StorageAccountName": {      
       "type": "string",
       "metadata": {
         "description": "This is the name of the your storage account. Enter up to 20 characters"
-      }
+      },
+      "defaultValue": "sasjansen"
     },
     "FirewallDnsName": {
       "type": "string",
       "metadata": {
         "description": "Unique DNS Name for the Public IP used to access PAN Firewall VM."
       },
-      "defaultValue": "pan-fw"
+      "defaultValue": "pan-fw-sjansen"
     },
     "WebServerDnsName": {
       "type": "string",
       "metadata": {
         "description": "Unique DNS name doe the Public IP for the firewall's Data Plane interface."
       },
-      "defaultValue": "pan-web"
+      "defaultValue": "pan-web-sjansen"
     },
     "FirewallVmName": {
       "type": "string",
       "metadata": {
         "description": "Name of VM-Series VM in the portal"
       },
-      "defaultValue": "pan-fw"
+      "defaultValue": "pan-fw-sjansen"
     },
     "FirewallVmSize": {
       "type": "string",
@@ -67,10 +68,10 @@
     "strAccountName": "[concat(parameters('StorageAccountName'),variables('unqString'))]",
     "storageAccountType": "Standard_LRS",
     "fwvmName":  "[parameters('FirewallVmName')]",
-    "adminUserName": "paloalto",
-    "adminPassword":"Pal0Alt0@123",
+    "adminUserName": "admnin",
+    "adminPassword":"Banane2000!",
     "fwVmSize": "[parameters('FirewallVmSize')]",
-    "gvmSize": "Standard_A1",
+    "gvmSize": "Standard_A1_v2",
     "fromGatewayLogin": "[parameters('FromGatewayLogin')]",
     "IPAddressPrefix": "10.5",
     "WebPublicIPName": "WebPublicIP",
