@@ -61,6 +61,7 @@
     "location": "[resourceGroup().location]",
     "unqString" : "[substring(uniqueString(resourceGroup().id), 0, 4)]",
     "strAccountName": "[concat(parameters('StorageAccountName'),variables('unqString'))]",
+    "storageAccountName": "[concat(parameters('StorageAccountName'),variables('unqString'))]",
     "storageAccountType": "Standard_LRS",
     "fwvmName":  "[parameters('FirewallVmName')]",
     "adminUserName": "admnin",
