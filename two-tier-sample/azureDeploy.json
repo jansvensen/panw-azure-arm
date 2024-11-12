@@ -7,24 +7,28 @@
       "metadata": {
         "description": "This is the name of the your storage account. Enter up to 20 characters"
       },
+      "defaultValue": "sasjansen"
     },
     "FirewallDnsName": {
       "type": "string",
       "metadata": {
         "description": "Unique DNS Name for the Public IP used to access PAN Firewall VM."
       },
+      "defaultValue": "pan-fw-sjansen"
     },
     "WebServerDnsName": {
       "type": "string",
       "metadata": {
         "description": "Unique DNS name doe the Public IP for the firewall's Data Plane interface."
       },
+      "defaultValue": "pan-web-sjansen"
     },
     "FirewallVmName": {
       "type": "string",
       "metadata": {
         "description": "Name of VM-Series VM in the portal"
       },
+      "defaultValue": "pan-fw-sjansen"
     },
     "FirewallVmSize": {
       "type": "string",
@@ -35,6 +39,7 @@
       "metadata": {
         "description": "This is the size of PAN's firewall VM"
       },
+      "defaultValue": "Standard_D3_v2"
     },
     "fwSku": {
        "type": "string",
@@ -60,6 +65,7 @@
     "apiVersion": "2015-05-01-preview",
     "location": "[resourceGroup().location]",
     "unqString" : "[substring(uniqueString(resourceGroup().id), 0, 4)]",
+    "strAccountName": "[concat(parameters('StorageAccountName'),variables('unqString'))]",
     "storageAccountType": "Standard_LRS",
     "fwvmName":  "[parameters('FirewallVmName')]",
     "adminUserName": "admnin",
