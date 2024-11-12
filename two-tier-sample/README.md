@@ -13,4 +13,4 @@ Unless explicitly tagged, all projects or work posted in our GitHub repository (
 
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fjansvensen%2Fpanw-azure-arm%2Fmaster%2Ftwo-tier-sample%2FazureDeploy.json">Deploy in Azure</a> 
 
-<a href="https://raw.githubusercontent.com/jansvensen/panw-azure-arm/master/two-tier-sample/azureDeploy.json">>Visualize</a> 
+<a href="https://raw.githubusercontent.com/jansvensen/panw-azure-arm/master/two-tier-sample/azureDeploy.json">Visualize</a> 
