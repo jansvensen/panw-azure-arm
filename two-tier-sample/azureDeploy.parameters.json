@@ -3,16 +3,16 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "StorageAccountName": {
-      "value": "pantestdrivetest"
+      "value": "sasjansen"
     },
     "FirewallDnsName": {
-      "value": "pan-fw"
+      "value": "pan-fw-sjansen"
     },
     "WebServerDnsName": {
-      "value": "pan-web"
+      "value": "pan-web-sjansen"
     },
     "FirewallVmName": {
-      "value": "pan-fw"
+      "value": "pan-fw-sjansen"
     },
     "FirewallVmSize": {
       "value": "Standard_D3_v2"
